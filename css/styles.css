@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.home {
+    background-image: url("./images/background-milushev.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#typing-text {
+    position: absolute;
+    top: 40%;
+    left: 40px;
+    transform: translateY(-50%);
+    width: 45%;
+    margin-left: auto;
+    margin-right: 0;
+    color: white;
+    font-size: 2rem;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
+#typing-text h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+#typing-text h2 {
+    margin: 0;
+    line-height: 1.5;
+}
