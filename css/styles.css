@@ -7,6 +7,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 .navbar {
     background-color: #333 !important;
 
@@ -29,12 +31,6 @@ body {
     height: 100vh;
 }
 
-.about {
-    background-image: url("./images/about.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh
-}
 
 #typing-text {
     position: absolute;
