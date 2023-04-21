@@ -3,11 +3,12 @@
     src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -57,6 +58,20 @@ body {
     white-space: pre-wrap;
     line-height: 1.5;
     overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 600px) {
+    #typing-text {
+        font-size: 0.5rem;
+    }
+
+    #typing-text h1 {
+        font-size: 3rem;
+    }
+
+    #typing-text h2 {
+        font-size: 1.5rem;
+    }
 }
 
 
