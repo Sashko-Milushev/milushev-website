@@ -38,51 +38,38 @@ body {
 
 
 .home {
-    background-image: url("./images/background-milushev.jpg");
+    background-image: url("./images/backgound101.avif");
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
-
-#typing-text {
-    position: absolute;
-    top: 40%;
-    left: 40px;
-    transform: translateY(-50%);
-    width: 45%;
-    margin-left: auto;
-    margin-right: 0;
-    color: white;
-    font-size: 1rem;
-    white-space: pre-wrap;
-    line-height: 1.5;
-    overflow-wrap: break-word;
+#home-text {
+    text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-    #typing-text {
-        font-size: 0.5rem;
+#home-text h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+#home-text p {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    #home-text h1 {
+        font-size: 2rem;
+        line-height: 1.2;
     }
 
-    #typing-text h1 {
-        font-size: 3rem;
-    }
-
-    #typing-text h2 {
+    #home-text p {
         font-size: 1.5rem;
+        line-height: 1.5;
+        margin-top: 1rem;
     }
-}
-
-
-#typing-text h1 {
-    font-size: 5rem;
-    margin: 0;
-}
-
-#typing-text h2 {
-    margin: 0;
-    line-height: 1.5;
 }
 
 footer {
@@ -133,14 +120,16 @@ ul li {
 }
 
 #buttons {
-    display: none;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 1rem;
     position: absolute;
-    top: 80%;
-    left: 25%;
+    top: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
-}
+  }
+  
 
 .button {
     display: inline-block;
