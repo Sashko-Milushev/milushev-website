@@ -35,6 +35,11 @@ body {
     color: #fff;
 }
 
+.navbar-brand img {
+    height: 30px;
+}
+
+
 
 
 .home {
@@ -128,8 +133,8 @@ ul li {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
+}
+
 
 .button {
     display: inline-block;
