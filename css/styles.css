@@ -51,6 +51,7 @@ body {
 
 #home-text {
     text-align: center;
+    padding-top: 10px;
 }
 
 #home-text h1 {
@@ -62,6 +63,7 @@ body {
     font-size: 2rem;
     line-height: 1.5;
     margin-top: 2rem;
+    
 }
 
 @media (max-width: 768px) {
@@ -73,7 +75,7 @@ body {
     #home-text p {
         font-size: 1.5rem;
         line-height: 1.5;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 }
 
@@ -206,4 +208,14 @@ ul li {
     background-color: #007bff;
     border-color: #007bff;
     color: #fff;
+}
+.project {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .project {
+        padding-top: 10px;
+        padding-bottom: 8px;
+    }
 }
