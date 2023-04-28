@@ -215,7 +215,7 @@ ul li {
 }
 @media (max-width: 768px) {
     .project {
-        padding-top: 10px;
+        padding-top: 20px;
         padding-bottom: 8px;
     }
 }
