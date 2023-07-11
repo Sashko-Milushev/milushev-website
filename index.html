@@ -2,90 +2,105 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milushev</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" href="css/images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="css/images/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milushev</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" href="css/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="css/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="certificates.html">Certificates</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      
-    <main class="home">
-        <div id="home-text">
-            <h1>Welcome to my website</h1>
-            <p>I'm Sashko Milushev, a software developer who enjoys learning new technologies, creating innovative
-                solutions, and dive into solving problems. I'm excited to collaborate with like-minded individuals and take on new
-                challenges in the world of software development.</p>
-        </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
 
-        <div id="buttons">
-            <button class="button" onclick="window.location.href='about.html'">ABOUT ME</button>
-            <button class="button" onclick="window.location.href='projects.html'">MY PROJECTS</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="certificates.html">Certificates</a>
+            </li>
+          </ul>
         </div>
-    </main>
+      </div>
+    </nav>
+  </header>
+
+  <main class="home">
+    
+
+    <div id="particles-js">
+      <div id="home-text">
+        <h1>Welcome to my website</h1>
+        <p>I'm Sashko Milushev, a software developer who enjoys learning new technologies, creating innovative
+          solutions, and dive into solving problems. I'm excited to collaborate with like-minded individuals and take on
+          new
+          challenges in the world of software development.</p>
+      </div>
+  
+      <div id="buttons">
+        <button class="button" onclick="window.location.href='about.html'">ABOUT ME</button>
+        <button class="button" onclick="window.location.href='projects.html'">MY PROJECTS</button>
+      </div>
+    </div> <!-- stats - count particles -->
+    <div class="count-particles"> <span class="js-count-particles"></span></div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script>
+      particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+    </script>
 
 
-    <footer>
-        <div class="footer-content">
-            <div class="left-section">
-                <h3>Social Media</h3>
-                <p>Connect with me:</p>
-                <div class="social-icons">
-                    <a href="https://github.com/Sashko-Milushev" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/sashko-milushev-183517225/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="middle-section">
-                <h3>Contact Information</h3>
-                <ul>
-                    <li>Email: milushev.sashko@gmail.com</li>
-                    <li>Phone: +359 885 39 21 21</li>
-                </ul>
-            </div>
-            <div class="right-section">
-                <h3>University</h3>
-                <p>Visit my university:</p>
-                <div class="university-link">
-                    <a href="https://softuni.bg/" target="_blank"><img src="./css/images/softuni_logo.png"
-                            alt="SoftUni logo"></a>
-                </div>
-            </div>
+  </main>
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="left-section">
+        <h3>Social Media</h3>
+        <p>Connect with me:</p>
+        <div class="social-icons">
+          <a href="https://github.com/Sashko-Milushev" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/sashko-milushev-183517225/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
         </div>
-    </footer>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+      </div>
+      <div class="middle-section">
+        <h3>Contact Information</h3>
+        <ul>
+          <li>Email: milushev.sashko@gmail.com</li>
+          <li>Phone: +359 885 39 21 21</li>
+        </ul>
+      </div>
+      <div class="right-section">
+        <h3>University</h3>
+        <p>Visit my university:</p>
+        <div class="university-link">
+          <a href="https://softuni.bg/" target="_blank"><img src="./css/images/softuni_logo.png" alt="SoftUni logo"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="js/particles.js"></script>
+
 </body>
 
 </html>
