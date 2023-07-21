@@ -40,6 +40,7 @@ main.container-fluid {
 
 .container {
     background-color: #95C0D3;
+    padding: 20px;
 
 }
 
@@ -97,6 +98,43 @@ main.container-fluid {
         margin-top: 2rem;
     }
 }
+
+/* CSS for header responsiveness */
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+    }
+
+    .navbar-toggler {
+        margin: 0 auto;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section,
+    .middle-section,
+    .right-section {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
 
 footer {
     padding: 10px 0;
@@ -180,7 +218,7 @@ ul li {
     align-items: center;
     margin-top: 1rem;
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.8;
@@ -232,15 +270,40 @@ ul li {
 }
 
 .project {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding: 20px;
 }
 
-@media (max-width: 768px) {
+.project h2 {
+    font-size: 2rem;
+    /* Reduce font size for project titles on smaller screens */
+}
+
+.project p {
+    font-size: 1.2rem;
+    /* Adjust font size for project descriptions on smaller screens */
+}
+
+
+.project-gallery img {
+    max-width: 100%;
+    /* Set the maximum width to ensure images scale properly on smaller screens */
+    max-height: 400px;
+    /* Keep the maximum height to maintain aspect ratio */
+}
+
+/* CSS for gallery responsiveness */
+@media (max-width: 767px) {
+    .project-gallery a:not(:first-child) {
+        display: none;
+        /* Hide images after the first one for smaller screens */
+    }
+}
+
+
+
+@media (max-width: 767px) {
     .project {
-        padding-top: 20px;
-        padding-bottom: 8px;
+        padding: 10px;
     }
 }
 
