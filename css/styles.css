@@ -300,6 +300,16 @@ ul li {
 }
 
 @media (max-width: 767px) {
+    .project-gallery img {
+        max-width: 70%;
+        /* Set the maximum width to ensure images scale properly on smaller screens */
+        max-height: 300px;
+        /* Keep the maximum height to maintain aspect ratio */
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 767px) {
     .lb-nav {
         display: block;
         /* Show the navigation arrows */
