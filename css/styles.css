@@ -301,7 +301,7 @@ ul li {
 
 @media (max-width: 767px) {
     .project-gallery img {
-        max-width: 70%;
+        max-width: 70% !important;
         
         max-height: 300px;
         
