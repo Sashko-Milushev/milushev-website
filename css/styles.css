@@ -34,7 +34,9 @@ main.container-fluid {
     background-color: #95C0D3;
 }
 
-
+.main-background {
+    background-color: #95C0D3;
+}
 
 .container {
     background-color: #95C0D3;
@@ -232,6 +234,7 @@ ul li {
 .project {
     padding-top: 20px;
     padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 @media (max-width: 768px) {
