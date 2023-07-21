@@ -30,12 +30,17 @@ main.home {
     flex-direction: column;
 }
 
+main.container-fluid {
+    background-color: #95C0D3;
+}
+
 
 
 .container {
     background-color: #95C0D3;
 
 }
+
 
 .navbar {
     background-color: #333 !important;
