@@ -296,7 +296,7 @@ ul li {
     /* Set the maximum width to ensure images scale properly on smaller screens */
     max-height: 300px;
     /* Keep the maximum height to maintain aspect ratio */
-    object-fit: cover;
+
 }
 
 @media (max-width: 767px) {
