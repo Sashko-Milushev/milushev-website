@@ -292,10 +292,31 @@ ul li {
 
 
 .project-gallery img {
-    max-width: 100%;
+    max-width: 90%;
     /* Set the maximum width to ensure images scale properly on smaller screens */
     max-height: 300px;
     /* Keep the maximum height to maintain aspect ratio */
+}
+
+@media (max-width: 767px) {
+    .lb-nav {
+        display: block;
+        /* Show the navigation arrows */
+    }
+
+    .lb-prev,
+    .lb-next {
+        background: rgba(0, 0, 0, 0.5);
+        /* Background color for arrows */
+        color: #fff;
+        /* Arrow color */
+        padding: 5px 10px;
+        /* Adjust the padding as needed */
+        font-size: 1.2rem;
+        /* Adjust the font size as needed */
+        border-radius: 50%;
+        /* Make the arrows circular */
+    }
 }
 
 /* CSS for gallery responsiveness */
