@@ -51,6 +51,18 @@
     </header>
     <main class="main-background">
         <div class="project">
+            <h2>Quiz App</h2>
+            <p>Quiz App is a dynamic web platform designed to offer an engaging quiz experience. With its sleek
+                interface and robust features, QuizApp enables users to dive into a world of interactive quizzes.
+                Seamlessly built on Django REST Framework and incorporating Simple JWT for secure authentication,
+                QuizApp ensures a seamless user experience. By integrating an external API for question generation,
+                QuizApp offers an extensive range of quiz topics and questions, keeping users entertained and
+                challenged. Whether you're a trivia enthusiast or a casual quizzer, QuizApp provides the perfect
+                platform to test your knowledge and have fun.</p>
+            <a href="https://github.com/Sashko-Milushev/quizapp" target="_blank">View on GitHub</a>
+
+        </div>
+        <div class="project">
             <h2>Recipes Notebook</h2>
             <p>The Recipes Notebook is a web application that allows you to easily save, organize and search your
                 favorite recipes. The application provides a clean and user-friendly interface for adding and editing
@@ -130,8 +142,7 @@
                 <h3>Social Media</h3>
                 <p>Connect with me:</p>
                 <div class="social-icons">
-                    <a href="https://github.com/Sashko-Milushev" target="_blank"><i
-                            class="fab fa-github"></i></a>
+                    <a href="https://github.com/Sashko-Milushev" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/sashko-milushev-183517225/" target="_blank"><i
                             class="fab fa-linkedin"></i></a>
                 </div>
@@ -156,37 +167,37 @@
 
 
 
-            
-            <script src="./js/bootstrap.min.js"></script>
-            <script src="./js/main.js"></script>
 
-            <script src="staticfiles/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.js"></script>
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    const projectGalleries = document.querySelectorAll('.project-gallery');
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
 
-                    projectGalleries.forEach(gallery => {
-                        const imageLinks = gallery.querySelectorAll('a');
+    <script src="staticfiles/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const projectGalleries = document.querySelectorAll('.project-gallery');
 
-                        imageLinks.forEach((link, index) => {
-                            if (index > 0) {
-                                link.style.display = 'none'; // Hide images after the first one
-                            }
+            projectGalleries.forEach(gallery => {
+                const imageLinks = gallery.querySelectorAll('a');
 
-                            link.addEventListener('click', (e) => {
-                                e.preventDefault();
-                                lightbox.start(link); // Open the lightbox gallery with the clicked image
-                            });
-                        });
+                imageLinks.forEach((link, index) => {
+                    if (index > 0) {
+                        link.style.display = 'none'; // Hide images after the first one
+                    }
+
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        lightbox.start(link); // Open the lightbox gallery with the clicked image
                     });
-                    lightbox.option({
-                        'alwaysShowNavOnTouchDevices': true,
-                    })
                 });
+            });
+            lightbox.option({
+                'alwaysShowNavOnTouchDevices': true,
+            })
+        });
 
 
 
-            </script>
+    </script>
 
 </body>
 
